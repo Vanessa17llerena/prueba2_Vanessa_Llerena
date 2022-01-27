@@ -1,16 +1,22 @@
 package com.nadershamma.apps.androidfunwithflags;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class Login_VELLC extends AppCompatActivity {
+import java.util.ArrayList;
+
+public class Login_VELLC extends AppCompatActivity  {
 
     private EditText editTextUsuario;
     private EditText editTextContraseña;
     private Button buttonIngresar;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,9 +25,22 @@ public class Login_VELLC extends AppCompatActivity {
         editTextUsuario = findViewById(R.id.editTextUsuario);
         editTextContraseña= findViewById(R.id.editTextContraseña);
         buttonIngresar = findViewById(R.id.buttonIngresar);
+       buttonIngresar.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               String usuario = editTextUsuario.getText().toString();
+               String contraseña = editTextContraseña.getText().toString();
+               if((usuario.equals("Vanessa") || usuario.equals("Leonel"))
+                       && (contraseña.equals("12345") || contraseña.equals("23456") ) )
+               {
+               //    Intent intent = new Intent(this, MainActivity_VELLC.class);
+
+               }
+           }
+       });
     }
 
-    public  void Ingresar(View view){
 
-    }
+
+
 }
