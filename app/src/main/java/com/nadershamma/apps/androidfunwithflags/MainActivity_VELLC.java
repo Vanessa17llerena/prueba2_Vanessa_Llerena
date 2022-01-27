@@ -57,7 +57,7 @@ public class MainActivity_VELLC extends AppCompatActivity {
         setSupportActionBar(toolbar);
         this.setSharedPreferences();
         this.screenSetUp();
-        textViewUsuario = findViewById(R.id.textViewUsuario);
+
     }
 
     @Override

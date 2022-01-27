@@ -43,11 +43,15 @@ public class MainActivityFragment extends Fragment {
     private QuizViewModel quizViewModel;
 
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.quizViewModel = ViewModelProviders.of(getActivity()).get(QuizViewModel.class);
-
+        textViewUsuario = findViewById(R.id.textViewUsuario1);
+        Bundle dato = getIntent().getExtras();
+        String usuario = dato.getString("key_usuario1");
+        textViewUsuario.setText(usuario);
     }
 
     @Override
