@@ -11,7 +11,7 @@ import android.util.Log;
 
 import com.nadershamma.apps.lifecyclehelpers.QuizViewModel;
 
-public class ResultsDialogFragment extends DialogFragment{
+public class ResultsDialogFragment_VELLC extends DialogFragment{
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

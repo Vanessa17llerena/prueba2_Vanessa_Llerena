@@ -5,11 +5,10 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.nadershamma.apps.androidfunwithflags.MainActivityFragment;
 import com.nadershamma.apps.androidfunwithflags.R;
-import com.nadershamma.apps.androidfunwithflags.ResultsDialogFragment;
+import com.nadershamma.apps.androidfunwithflags.ResultsDialogFragment_VELLC;
 import com.nadershamma.apps.lifecyclehelpers.QuizViewModel;
 
 public class GuessButtonListener implements OnClickListener {
@@ -38,7 +37,7 @@ public class GuessButtonListener implements OnClickListener {
 
             if (this.mainActivityFragment.getQuizViewModel().getCorrectAnswers()
                     == QuizViewModel.getFlagsInQuiz()) {
-                ResultsDialogFragment quizResults = new ResultsDialogFragment();
+                ResultsDialogFragment_VELLC quizResults = new ResultsDialogFragment_VELLC();
                 quizResults.setCancelable(false);
                 try {
                     quizResults.show(this.mainActivityFragment.getChildFragmentManager(), "Quiz Results");

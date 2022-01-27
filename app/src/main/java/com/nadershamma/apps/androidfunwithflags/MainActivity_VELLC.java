@@ -15,9 +15,7 @@ import android.view.MenuItem;
 import com.nadershamma.apps.eventhandlers.PreferenceChangeListener;
 import com.nadershamma.apps.lifecyclehelpers.QuizViewModel;
 
-import java.util.Set;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity_VELLC extends AppCompatActivity {
     public static final String CHOICES = "pref_numberOfChoices";
     public static final String REGIONS = "pref_regionsToInclude";
     private boolean deviceIsPhone = true;
@@ -88,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent preferencesIntent = new Intent(this, SettingsActivity.class);
+        Intent preferencesIntent = new Intent(this, SettingsActivity_VELLC.class);
         startActivity(preferencesIntent);
         return super.onOptionsItemSelected(item);
     }
