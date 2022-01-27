@@ -41,12 +41,13 @@ public class MainActivityFragment extends Fragment {
     private TableRow[] guessTableRows;
     private TextView answerTextView;
     private QuizViewModel quizViewModel;
-    private TextView textViewNUsuario;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.quizViewModel = ViewModelProviders.of(getActivity()).get(QuizViewModel.class);
+
     }
 
     @Override

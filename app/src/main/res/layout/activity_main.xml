@@ -22,4 +22,10 @@
 
     <include layout="@layout/content_main" />
 
+    <TextView
+        android:id="@+id/textViewUsuario"
+        android:layout_width="87dp"
+        android:layout_height="67dp"
+        android:text="TextView" />
+
 </android.support.design.widget.CoordinatorLayout>

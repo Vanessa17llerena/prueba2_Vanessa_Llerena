@@ -32,7 +32,10 @@ public class Login_VELLC extends AppCompatActivity  {
                Bundle dato = getIntent().getExtras();
                String usuario = editTextUsuario.getText().toString();
                String contraseña = editTextContraseña.getText().toString();
-               String usuario1= dato.
+               String usuario1= dato.getString("key_usuario1");
+
+               editTextUsuario.setText(usuario1);
+
                if((usuario.equals("Vanessa") || usuario.equals("Leonel"))
                        && (contraseña.equals("12345") || contraseña.equals("23456") ) )
                {

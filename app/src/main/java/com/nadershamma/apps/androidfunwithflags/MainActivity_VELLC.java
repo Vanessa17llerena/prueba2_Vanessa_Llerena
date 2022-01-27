@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.nadershamma.apps.eventhandlers.PreferenceChangeListener;
 import com.nadershamma.apps.lifecyclehelpers.QuizViewModel;
@@ -22,8 +23,11 @@ public class MainActivity_VELLC extends AppCompatActivity {
     private boolean preferencesChanged = true;
     private MainActivityFragment quizFragment;
     private QuizViewModel quizViewModel;
-    private OnSharedPreferenceChangeListener preferencesChangeListener;
+    private TextView textViewUsuario;
+    private  int Codigo =1;
 
+    private OnSharedPreferenceChangeListener preferencesChangeListener;
+        private int codigoReq=1;
     private void setSharedPreferences() {
         // set default values in the app's SharedPreferences
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
@@ -53,6 +57,7 @@ public class MainActivity_VELLC extends AppCompatActivity {
         setSupportActionBar(toolbar);
         this.setSharedPreferences();
         this.screenSetUp();
+        textViewUsuario = findViewById(R.id.textViewUsuario);
     }
 
     @Override
