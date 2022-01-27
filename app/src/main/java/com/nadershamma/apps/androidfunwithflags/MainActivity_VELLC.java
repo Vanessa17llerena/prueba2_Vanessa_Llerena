@@ -23,9 +23,8 @@ public class MainActivity_VELLC extends AppCompatActivity {
     private boolean preferencesChanged = true;
     private MainActivityFragment quizFragment;
     private QuizViewModel quizViewModel;
-    private TextView textViewUsuario;
+    private TextView textViewUsuario1;
     private  int Codigo =1;
-
 
     private OnSharedPreferenceChangeListener preferencesChangeListener;
         private int codigoReq=1;
@@ -58,10 +57,10 @@ public class MainActivity_VELLC extends AppCompatActivity {
         setSupportActionBar(toolbar);
         this.setSharedPreferences();
         this.screenSetUp();
-        textViewUsuario = findViewById(R.id.textViewUsuario1);
+        textViewUsuario1 = findViewById(R.id.textViewUsuario1);
         Bundle dato = getIntent().getExtras();
         String usuario = dato.getString("key_usuario1");
-        textViewUsuario.setText(usuario);
+        textViewUsuario1.setText(usuario);
     }
 
 

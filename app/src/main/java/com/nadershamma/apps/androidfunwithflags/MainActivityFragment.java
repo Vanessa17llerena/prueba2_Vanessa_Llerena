@@ -41,8 +41,7 @@ public class MainActivityFragment extends Fragment {
     private TableRow[] guessTableRows;
     private TextView answerTextView;
     private QuizViewModel quizViewModel;
-    private TextView textViewUsuario;
-    private  int Codigo =1;
+
 
 
     @Override
