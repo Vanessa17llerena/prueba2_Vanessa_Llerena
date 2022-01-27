@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -33,8 +34,10 @@ public class Login_VELLC extends AppCompatActivity  {
                if((usuario.equals("Vanessa") || usuario.equals("Leonel"))
                        && (contraseña.equals("12345") || contraseña.equals("23456") ) )
                {
-               //    Intent intent = new Intent(this, MainActivity_VELLC.class);
-
+                   Intent intent = new Intent(getApplicationContext() , MainActivity_VELLC.class);
+                    startActivity(intent);
+               }else {
+                   Toast.makeText(getApplicationContext(),"Usuario o contraeña incorecctos",Toast.LENGTH_LONG);
                }
            }
        });
