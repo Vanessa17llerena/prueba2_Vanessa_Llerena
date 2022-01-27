@@ -22,6 +22,10 @@
     <string name="tv_contraseña">Contraseña</string>
     <string name="ed_contraseña">Contraseña</string>
     <string name="btn_Ingresar">Ingresar</string>
+    <string name="usuer1"> Vanessa</string>
+    <string name="usuer2">Leonel</string>
+    <string name="contraseña1">12345</string>
+    <string name="contraseña2">23456</string>
 
 
 </resources>

@@ -29,8 +29,10 @@ public class Login_VELLC extends AppCompatActivity  {
        buttonIngresar.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
+               Bundle dato = getIntent().getExtras();
                String usuario = editTextUsuario.getText().toString();
                String contraseña = editTextContraseña.getText().toString();
+               String usuario1= dato.
                if((usuario.equals("Vanessa") || usuario.equals("Leonel"))
                        && (contraseña.equals("12345") || contraseña.equals("23456") ) )
                {

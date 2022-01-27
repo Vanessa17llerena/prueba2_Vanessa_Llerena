@@ -41,6 +41,7 @@ public class MainActivityFragment extends Fragment {
     private TableRow[] guessTableRows;
     private TextView answerTextView;
     private QuizViewModel quizViewModel;
+    private TextView textViewNUsuario;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
