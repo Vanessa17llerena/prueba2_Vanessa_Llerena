@@ -41,17 +41,15 @@ public class MainActivityFragment extends Fragment {
     private TableRow[] guessTableRows;
     private TextView answerTextView;
     private QuizViewModel quizViewModel;
-
+    private TextView textViewUsuario;
+    private  int Codigo =1;
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.quizViewModel = ViewModelProviders.of(getActivity()).get(QuizViewModel.class);
-        textViewUsuario = findViewById(R.id.textViewUsuario1);
-        Bundle dato = getIntent().getExtras();
-        String usuario = dato.getString("key_usuario1");
-        textViewUsuario.setText(usuario);
+
     }
 
     @Override

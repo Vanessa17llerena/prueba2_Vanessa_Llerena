@@ -26,6 +26,7 @@ public class MainActivity_VELLC extends AppCompatActivity {
     private TextView textViewUsuario;
     private  int Codigo =1;
 
+
     private OnSharedPreferenceChangeListener preferencesChangeListener;
         private int codigoReq=1;
     private void setSharedPreferences() {
@@ -57,8 +58,12 @@ public class MainActivity_VELLC extends AppCompatActivity {
         setSupportActionBar(toolbar);
         this.setSharedPreferences();
         this.screenSetUp();
-
+        textViewUsuario = findViewById(R.id.textViewUsuario1);
+        Bundle dato = getIntent().getExtras();
+        String usuario = dato.getString("key_usuario1");
+        textViewUsuario.setText(usuario);
     }
+
 
     @Override
     protected void onStart() {
